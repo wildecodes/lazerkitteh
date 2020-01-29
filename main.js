@@ -1,12 +1,19 @@
-var myGamePiece;
-
 function startGame() {
   myGameArea.start();
   myGamePiece = new component(30, 30, "red", 200, 570);
+  document.onkeydown = handle;
   // myGamePiece.gravity = 0.05;
   // myScore = new component("30px", "Consolas", "black", 280, 40, "text");
   // myGameArea.start();
 }
+
+
+var bgReady = false;
+var bgImage = new Image();
+bgImage.onload = function () {
+  bgReady = true;
+};
+bgImage.src = "background.jpg";
 
 var myGameArea = {
   canvas: document.createElement("canvas"),
@@ -15,7 +22,6 @@ var myGameArea = {
     this.canvas.height = 600;
     this.context = this.canvas.getContext("2d");
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-    document.onkeydown = handle;
     // this.interval = setInterval(updateGameArea, 20);
   },
   clear: function () {
