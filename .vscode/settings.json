@@ -1,3 +1,16 @@
 {
-  "workbench.colorTheme": "Dracula"
+  "workbench.colorTheme": "Noctis High Contrast",
+  "indentRainbow.colors": [
+    "rgba(150, 122, 255, 0.5)",
+    "rgba(255, 87, 235, 0.5)",
+    "rgba(255, 87, 87, 0.5)",
+    "rgba(255, 175, 122, 0.5)",
+    "rgba(255, 225, 122, 0.5)",
+    "rgba(122, 255, 129, 0.5)",
+    "rgba(122, 255, 255, 0.5)",
+    "rgba(122, 160, 255, 0.5)",
+  ],
+                          "indentRainbow.errorColor": "rgba(255, 255, 255, 0.5)",
+  "indentRainbow.tabmixColor": "rgba(255, 255, 255, 0.5)"
+
 }
