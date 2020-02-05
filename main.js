@@ -51,7 +51,8 @@ function movePiece(direction) {
     updateGameArea();
 }
 
-function lazer() { // lazer = new component(30, 5, "red", hero.x, hero.y);
+function lazer() {
+    // lazer = new component(30, 5, "red", hero.x, hero.y);
     console.log("pewpew!");
 }
 
@@ -71,7 +72,7 @@ function handle(e) {
             break;
         case 70: lazer();
             e.preventDefault();
-            // console.log("pew...");
+            console.log("pew...");
             break;
     }
 }
