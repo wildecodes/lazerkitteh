@@ -33,6 +33,7 @@ function component(img, width, height, x, y) {
     this.img = img;
     this.update = function () {
         ctx = gameArea.context;
+        ctx.fillstyle = img;
         ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     };
 }
